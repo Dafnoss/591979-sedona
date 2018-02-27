@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+        <div class="container main">
+            <header>
+                <div class="logo">
+                    <img src="#" alt="sedona">
+                </div>
+                <section class="menu">
+                    <div class="menu-item">
+                        <a href="index.html">Информация</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">Фото и видео</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">Карта штата</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">Гостиницы</a>
+                    </div>
+                </section>
+            </header>
+            <main>
+                <section class="filters">
+                    <form method="post" action="http://htmlacademy.ru">
+                        <fieldset class="infrastructure">
+                            <legend class="main-title">Инфраструктура:</legend>
+                            <label for="pool"></label>
+                            <input type="checkbox" id="pool" name="pool" checked hidden>
+                            <label for="parking"></label>
+                            <input type="checkbox" id="parking" name="parking" hidden>
+                            <label for="wifi"></label>
+                            <input type="checkbox" id="wifi" name="wifi" hidden>
+                        </fieldset>
+                        <fieldset class="prop-type">
+                            <legend class="main-title">Тип жилья:</legend>
+                            <label for="hotel"></label>
+                            <input type="checkbox" id="hotel" name="hotel" checked hidden>
+                            <label for="motel"></label>
+                            <input type="checkbox" id="motel" name="motel" hidden>
+                            <label for="apartments"></label>
+                            <input type="checkbox" id="apartments" name="apartments" hidden>
+                        </fieldset>
+                        <fieldset class="daily-price">
+                            <legend class="main-title">Стоимость в сутки (P):</legend>
+                            <div class="price-range">
+                                <p class="start-price">От 0</p>
+                                <p class="end-price">До 3000</p>
+                            </div>
+                                <label for="price"></label>
+                                <input type="range" name="price" id="price" min="0" max="3000" value="2000" step="100">
+                            <button class="filter-btn" type="submit">Показать</button>
+                        </fieldset>
+                    </form>
+                  </section>
+                <section class="filter-result">
+                    <div class="sort-menu">
+                        <div class="main-sort">
+                            <h2 class="main-title">Найдено</h2>
+                            <p>Сортировка:</p>
+                            <a href="#">По цене</a>
+                            <a href="#">По типу</a>
+                            <a href="#">По рейтингу</a>
+                        </div>
+                        <div class="side-sort">
+                            <div class="top-arrow">
+                            </div>
+                            <div class="bottom-arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-item">
+                        <div class="property-name">
+                            <div class="image">
+                                <img src="#" alt="amara-resort">
+                            </div>
+                            <h2 class="main-title">Amara Resort & Spa</h2>
+                            <div class="prop-description">
+                                <p>Гостиница</p>
+                                <p>От 4000 Р.</p>
+                            </div>
+                            <div class="buttons">
+                                <button class="btn-more" name="more">Подробнее</button>
+                                <button class="btn-reserve" name="reserve">Забронировать</button>
+                            </div>
+                        </div>
+                        <div class="property-rating">
+                            <div class="rating-stars">
+                                <div class="rating-star-item"></div>
+                                <div class="rating-star-item"></div>
+                                <div class="rating-star-item"></div>
+                                <div class="rating-star-item"></div>
+                                <div class="rating-star-item"></div>
+                            </div>
+                            <div class="rating-text">
+                                <p>Рейтинг 8,5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-item">
+                        <div class="property-name">
+                            <div class="image">
+                                <img src="#" alt="amara-resort">
+                            </div>
+                            <h2 class="main-title">Amara Resort & Spa</h2>
+                            <div class="prop-description">
+                                <p>Гостиница</p>
+                                <p>От 4000 Р.</p>
+                            </div>
+                            <div class="buttons">
+                                <button class="btn-more" name="more">Подробнее</button>
+                                <button class="btn-reserve" name="reserve">Забронировать</button>
+                            </div>
+                        </div>
+                        <div class="property-rating">
+                            <div class="rating-stars">
+                                <div class="rating-star-item"></div>
+                                <div class="rating-star-item"></div>
+                                <div class="rating-star-item"></div>
+                                <div class="rating-star-item"></div>
+                                <div class="rating-star-item"></div>
+                            </div>
+                            <div class="rating-text">
+                                <p>Рейтинг 8,5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-item">
+                        <div class="property-name">
+                            <div class="image">
+                                <img src="#" alt="amara-resort">
+                            </div>
+                            <h2 class="main-title">Amara Resort & Spa</h2>
+                            <div class="prop-description">
+                                <p>Гостиница</p>
+                                <p>От 4000 Р.</p>
+                            </div>
+                            <div class="buttons">
+                                <button class="btn-more" name="more">Подробнее</button>
+                                <button class="btn-reserve" name="reserve">Забронировать</button>
+                            </div>
+                        </div>
+                        <div class="property-rating">
+                            <div class="rating-stars">
+                                <div class="rating-star-item"></div>
+                                <div class="rating-star-item"></div>
+                                <div class="rating-star-item"></div>
+                                <div class="rating-star-item"></div>
+                                <div class="rating-star-item"></div>
+                            </div>
+                            <div class="rating-text">
+                                <p>Рейтинг 8,5</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="footer-item">
+                    #visitSedona
+                </div>
+                <div class="footer-item">
+                    <div class="social tw">
+                    </div>
+                    <div class="social fb">
+                    </div>
+                    <div class="social vk">
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <p>website by<p>
+                    <div class="logo-footer">
+                        <img src="#" alt="htmlAcademy">
+                    </div>
+                </div>
+            </footer>
+        </div>
+  <script type="text/javascript" src="js/scripts.css.js"></script>
+  </body>
+</html>
