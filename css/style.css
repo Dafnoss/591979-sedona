@@ -312,11 +312,27 @@ header {
 
 .social {
     display: inline-block;
-    background-color: red;
+
     font-size: 0px;
     width: 46px;
+    background-color: #81b3d2;
     height: 48px;
     margin-left: 1px;
+}
+
+.social a {
+    display: block;
+    width: 46px;
+    height: 48px;
+    background: url("../img/sprites.png") -776px -26px no-repeat;
+}
+
+.social.fb a {
+    background-position: -630px -26px
+}
+
+.social.yt a {
+    background-position: -470px -26px
 }
 
 .footer-item:last-child {
