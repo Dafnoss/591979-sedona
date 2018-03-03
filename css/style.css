@@ -9,6 +9,10 @@ body {
     background-color: #f2f2f2;
 }
 
+.hide {
+    display: none;
+}
+
 .container {
     max-width: 1200px;
     background-color: white;
@@ -231,13 +235,10 @@ header {
     padding: 0 35px 0 35px;
 }
 
-.search-form {
-    display: none;
-}
-
 .search {
     height: 231px;
     padding: 60px 6% 0 6%;
+    position: relative;
 }
 
 .search-main .search-title {
@@ -264,6 +265,7 @@ header {
      width: 568px;
      height: 86px;
      margin: 49px auto 0 auto;
+    cursor: pointer;
  }
 
 .search-main .btn p {
@@ -350,6 +352,107 @@ header {
 .footer-logo-pre {
     padding: 0 3px 5px 0;
 }
+
+.search-form {
+    box-sizing: border-box;
+    z-index: 1;
+    position: absolute;
+    width: 568px;
+    background-color: white;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%);
+    padding: 55px;
+    font-weight: bold;
+    color: black;
+}
+
+.form-item {
+    margin-bottom: 30px;
+
+}
+
+.form-item::after {
+    display: table;
+    content: '';
+    clear: both;
+
+}
+
+.form-item input {
+    width: 345px;
+    height: 38px;
+    box-sizing: border-box;
+    float: right;
+    user-focus-pointer: none;
+    user-select: none;
+    font: inherit;
+    text-transform: uppercase;
+    padding: 0 0 0 10px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.form-item input:focus{
+    outline: none;
+}
+
+
+.form-item label {
+    display: inline-block;
+    text-align: left;
+    float: left;
+    width: 113px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding-top: 9px;
+
+}
+
+.form-item:nth-child(3) input[name = "adults"] {
+    float: left;
+    width: 114px;
+    text-align: center;
+}
+
+.form-item:nth-child(3) input[name = "children"] {
+    float: right;
+    width: 114px;
+    text-align: center;
+}
+
+.form-item:nth-child(3) label[for="children"] {
+    padding-left: 40px;
+    float: right;
+}
+
+.input-form .btn {
+    margin-top: 24px;
+    width: 458px;
+    height: 58px;
+    background-color: #81b3d2;
+    color: white;
+    font: inherit;
+    font-size: 21px;
+    text-transform: uppercase;
+    line-height: 26px;
+    border: none;
+    cursor: pointer;
+}
+
+.input-form .btn:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
