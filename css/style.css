@@ -1,5 +1,5 @@
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif, arial;
     color: #333333;
     text-transform: uppercase;
     font-size: 14px;
@@ -28,7 +28,7 @@ body {
     line-height: 21px;
 }
 
-header {
+.page-header {
     width: 100%;
     position: relative;
 }
@@ -56,11 +56,13 @@ header {
 }
 
 .menu-item:first-child {
-    margin-left: 6%;
+    padding-left: 6%;
+    box-sizing: border-box;
 }
 
 .menu-item:last-child {
-    margin-right: 6%;
+    padding-right: 6%;
+    box-sizing: border-box;
 
 }
 
@@ -162,8 +164,8 @@ header {
     height: 256px;
 }
 
-.content-row:first-child .content-cell .main-title,
- .content-row:nth-child(3) .content-cell .main-title {
+.content-row:first-child .main-title,
+ .content-row:nth-child(3) .main-title {
      color: white;
      padding: 0;
      margin:0 auto 0 auto;
@@ -184,7 +186,7 @@ header {
 
 }
 
-.content-row:nth-child(2) .content-cell p {
+.content-row:nth-child(2) p {
     padding: 0 30px 0 30px;;
     margin: 0;
 
@@ -268,7 +270,7 @@ header {
     cursor: pointer;
  }
 
-.search-main .btn p {
+.search-main .btn-item {
     display: table-cell;
     vertical-align: middle;
     position: relative;
@@ -329,11 +331,11 @@ header {
     background: url("../img/sprites.png") -776px -26px no-repeat;
 }
 
-.social.fb a {
+.fb a {
     background-position: -630px -26px
 }
 
-.social.yt a {
+.yt a {
     background-position: -470px -26px
 }
 
@@ -374,7 +376,7 @@ header {
 
 .form-item::after {
     display: table;
-    content: '';
+    content: "";
     clear: both;
 
 }
