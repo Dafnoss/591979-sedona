@@ -31,24 +31,40 @@
     </header>
     <main>
         <section class="filters">
-            <form method="post" action="http://htmlacademy.ru">
+            <form method="post" action="http://htmlacademy.ru" class="filters-form">
                 <fieldset class="infrastructure">
                     <legend class="main-title">Инфраструктура:</legend>
-                    <input type="checkbox" id="pool" name="pool" checked>
-                    <label for="pool">Бассейн</label>
-                    <input type="checkbox" id="parking" name="parking">
-                    <label for="parking">Парковка</label>
-                    <input type="checkbox" id="wifi" name="wifi">
-                    <label for="wifi">Wi-Fi</label>
+                    <ul class="infrastructure-items">
+                        <li  class="check-box">
+                            <input type="checkbox" id="pool" name="pool" checked>
+                            <label for="pool">Бассейн</label>
+                        </li>
+                        <li class="check-box">
+                            <input type="checkbox" id="parking" name="parking">
+                            <label for="parking">Парковка</label>
+                        </li>
+                        <li class="check-box">
+                            <input type="checkbox" id="wifi" name="wifi">
+                            <label for="wifi">Wi-Fi</label>
+                        </li>
+                    </ul>
                 </fieldset>
                 <fieldset class="prop-type">
                     <legend class="main-title">Тип жилья:</legend>
-                    <input type="checkbox" id="hotel" name="hotel" checked>
-                    <label for="hotel">Гостиница</label>
-                    <input type="checkbox" id="motel" name="motel" checked>
-                    <label for="motel">Мотель</label>
-                    <input type="checkbox" id="apartments" name="apartments" checked>
-                    <label for="apartments">Апартаменты</label>
+                    <ul class="prop-type-items">
+                        <li class="check-box">
+                            <input type="checkbox" id="hotel" name="hotel" checked>
+                            <label for="hotel">Гостиница</label>
+                        </li>
+                        <li class="check-box">
+                            <input type="checkbox" id="motel" name="motel" checked>
+                            <label for="motel">Мотель</label>
+                        </li>
+                        <li class="check-box">
+                            <input type="checkbox" id="apartments" name="apartments" checked>
+                            <label for="apartments">Апартаменты</label>
+                        </li>
+                        </ul>
                 </fieldset>
                 <fieldset class="daily-price">
                     <legend class="main-title">Стоимость в сутки (P):</legend>
