@@ -540,6 +540,21 @@ input[type = "range"] {
     display: block;
     box-sizing: border-box;
     width: 99%;
+    pointer-events: none;
+}
+
+input[type="range"]:nth-of-type(2) {
+    margin-top: -22px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+}
+input[type="range"]::-moz-range-thumb {
+  pointer-events: all;
+}
+input[type="range"]::-ms-thumb {
+  pointer-events: all;
 }
 
 .filter-btn {
@@ -588,37 +603,3 @@ input:checked ~ label::before {
     transform: rotate(45deg);
     filter: drop-shadow(0px -0px 1px #4b789a);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
