@@ -520,11 +520,10 @@ fieldset .main-title {
 
 .price-range p {
     margin: 5px 0 5px 0;
+    width: 100%;
+    text-align: center;
 }
 
-.price-range p:first-child {
-    padding-left: 15px ;
-}
 
 .price-range::after {
     content: "";
@@ -532,6 +531,7 @@ fieldset .main-title {
     width: 0;
     height: 20px;
     border-left: 2px solid #ffffff;
+    left: 50%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -541,21 +541,84 @@ input[type = "range"] {
     box-sizing: border-box;
     width: 99%;
     pointer-events: none;
+    height: 2px;
+    padding-right: 5px ;
+    margin-top: 20px;
 }
 
 input[type="range"]:nth-of-type(2) {
-    margin-top: -22px;
+    margin-top: -4px;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-  pointer-events: all;
+input[type=range] {
+     -webkit-appearance: none;
+ }
+
+input[type=range]:focus {
+    outline: none;
 }
-input[type="range"]::-moz-range-thumb {
-  pointer-events: all;
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #FFFFFF;
 }
-input[type="range"]::-ms-thumb {
-  pointer-events: all;
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 3px #262522;
+    border: 0px solid #00001E;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -9px;
+    pointer-events: all
 }
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 1px #000000;
+    background: #FFFFFF;
+    border-radius: 0px;
+    border: 0px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 3px #262522;
+    border: 0px solid #00001E;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    cursor: pointer;
+    pointer-events: all
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 3px #262522;
+    border: 0px solid #00001E;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    cursor: pointer;
+    pointer-events: all
+}
+
 
 .filter-btn {
     display: block;
