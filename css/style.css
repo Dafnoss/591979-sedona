@@ -712,6 +712,10 @@ input:checked ~ label::before {
 
 }
 
+.side-sort-items {
+    margin-right: -10px;
+}
+
 .sort-links a {
     color: #cdcdcd;
     text-decoration: dotted underline #81b3d2;
@@ -785,14 +789,14 @@ input:checked ~ label::before {
     display: inline-block;
     padding: 0;
     vertical-align: middle;
-    margin-right: 0px;
+    margin-right: 2px;
     width: 110px;
     text-align: left;
 }
 
 .prop-description-text {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-bottom: 11px;
     text-align: left;
 }
 
