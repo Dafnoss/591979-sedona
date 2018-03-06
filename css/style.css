@@ -741,3 +741,91 @@ input:checked ~ label::before {
     transform: rotate(180deg);
     border-bottom-color: #81b3d2
 }
+
+.result-item::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.result-item {
+    padding: 30px 6% 30px 6%;
+        border-bottom: 1px solid #e5e5e5;
+}
+
+.prop-image {
+    float: left;
+    margin: 0 30px 0 0;
+    padding: 0;
+    line-height: 0px;
+}
+
+
+.prop-description {
+    float: left;
+}
+
+.prop-rating {
+    float: right;
+}
+
+.prop-description .main-title {
+    margin: 0;
+    text-align: left;
+}
+
+.main-title a {
+    color: black;
+    text-decoration: none;
+    line-height: 26px;
+}
+
+.prop-description-text span,
+.prop-buttons a {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    margin-right: 0px;
+    width: 110px;
+    text-align: left;
+}
+
+.prop-description-text {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.prop-buttons a {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.prop-buttons a:first-child {
+    background-color: #81b3d3;
+}
+
+.prop-buttons a:last-child {
+    background-color: #766357;
+    width: 142px;
+}
+
+.rating-star-item {
+    font-size: 20px;
+    color: #81b3d3;
+    text-align: right;
+    margin-bottom: 42px
+}
+
+.rating-text {
+    background-color: #f2f2f2;
+    padding: 3px 12px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 21px
+}
