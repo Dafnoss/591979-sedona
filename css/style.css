@@ -448,9 +448,12 @@ body {
     user-select: none;
     font: inherit;
     text-transform: uppercase;
-    padding: 0 0 0 10px;
     background-color: #f2f2f2;
     border: none;
+}
+
+.form-item input[type="text"] {
+    padding: 0 30px 0 10px;
 }
 
 .form-item input[type="text"]:hover{
@@ -577,6 +580,11 @@ body {
 
 .form-item:last-of-type span:active {
     color: #81b3d2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
 }
 
 /*End of first page*/
