@@ -1,5 +1,5 @@
 body {
-    font-family: "PT Sans", sans-serif, arial;
+    font-family: "PT Sans", Arial, sans-serif;
     color: #333333;
     text-transform: uppercase;
     font-size: 14px;
@@ -9,17 +9,18 @@ body {
     background-color: #f2f2f2;
 }
 
-.hide {
-    display: none;
-}
-
 .container {
     max-width: 1200px;
     background-color: white;
     min-width: 768px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 0px 15px -5px black;
 
+}
+
+input {
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .main-title {
@@ -99,6 +100,7 @@ body {
     overflow: hidden;
     position: relative;
     height: 508px;
+    background-color: #44749c;
 }
 
 .intro-top img {
@@ -121,6 +123,10 @@ body {
 .intro-bottom p {
     margin: 30px 0 0 0;
     padding: 0;
+}
+
+.content{
+    z-index: 20;
 }
 
 .content-row {
@@ -171,6 +177,7 @@ body {
     width: 67%;
     overflow: hidden;
     position: relative;
+    background-color: #c86753;
 }
 
 
@@ -235,8 +242,8 @@ body {
     align-items: center;
     padding-top: 47px ;
     padding-bottom: 47px;
-
 }
+
 
 .content-row:last-child .content-cell {
     padding: 0;
@@ -259,6 +266,8 @@ body {
 .search {
     padding: 60px 6% 0 6%;
     position: relative;
+    z-index: 1;
+    background-color: white;
 }
 
 .search-main .search-title {
@@ -286,6 +295,7 @@ body {
      height: 86px;
      margin: 47px auto 0 auto;
     cursor: pointer;
+    text-decoration: none;
  }
 
 .search-main .btn:hover {
@@ -410,20 +420,20 @@ body {
     opacity: 0.5;
 }
 
-
-
 .search-form {
     box-sizing: border-box;
-    z-index: 1;
+    z-index: -1;
     position: absolute;
     width: 568px;
     background-color: white;
     left: 50%;
-    top: 100%;
+    top: -65%;
     transform: translate(-50%);
     padding: 55px;
     font-weight: bold;
     color: black;
+    opacity: 0;
+    transition: all 1s ease-out;
 }
 
 .form-item {
@@ -456,11 +466,11 @@ body {
     padding: 0 30px 0 10px;
 }
 
-.form-item input[type="text"]:hover{
+.form-item input:hover{
     background-color: #ebebeb;
 }
 
-.form-item input[type="text"]:focus{
+.form-item input:focus{
     outline: 2px solid #e5e5e5;
     background-color: white;
 }
@@ -478,14 +488,21 @@ body {
 
 .form-item:nth-child(3) input[name = "adults"] {
     float: left;
-    width: 114px;
+    width: 38px;
     text-align: center;
+    margin-left: 38px;
+    margin-right: 38px;
+    padding: 0;
+
 }
 
 .form-item:nth-child(3) input[name = "children"] {
     float: right;
-    width: 114px;
+    width: 38px;
     text-align: center;
+    margin-left: 38px;
+    margin-right: 38px;
+    padding: 0;
 }
 
 
@@ -552,26 +569,34 @@ body {
     cursor: pointer;
 }
 
+.add-btn-adult,
+.remove-btn-adult,
+.add-btn-child,
+.remove-btn-child {
+    top: 0px;
+    width: 38px;
+    height: 30px;
+    padding-top:8px;
+    background-color: #f2f2f2;
+
+}
+
 .add-btn-adult {
-    top: 9px;
-    left: 202px;
+
+    left: 189px;
 }
 
 .remove-btn-adult {
-    top: 9px;
-    left: 120px;
-    width: 4px;
+
+    left: 113px;
 }
 
 .add-btn-child {
-    top: 9px;
-    left: 435px;
+    left: 420px;
 }
 
 .remove-btn-child {
-    top: 9px;
-    left: 350px;
-    width: 4px;
+    left: 344px;
 }
 
 .form-item:last-of-type span:hover {
@@ -583,8 +608,12 @@ body {
 }
 
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    display: none;
+input::-webkit-inner-spin-button,
+input::-moz-outer-spin-button,
+input::-moz-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
 }
 
 /*End of first page*/
@@ -595,6 +624,7 @@ input::-webkit-inner-spin-button {
     color: white;
     font-size: 14px;
     line-height: 21px;
+    background-color: #44749c;
     background: url("../img/hotels-background.jpg") no-repeat center;
 }
 
@@ -700,7 +730,7 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 2px;
     cursor: pointer;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s linear;
     background: #FFFFFF;
 }
 input[type=range]::-webkit-slider-thumb {
@@ -776,8 +806,6 @@ input[type=range]::-ms-thumb {
 .filter-btn:hover {
     color: black;
     background-color: white;
-
-
 }
 
 
@@ -787,31 +815,21 @@ input[type=range]::-ms-thumb {
 
 .check-box label::after {
     content: "";
+    width: 27px;
+    height: 23px;
     position: absolute;
-    width: 22px;
-    height: 22px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-image: url(../img/checkbox-off.svg);
     box-sizing: border-box;
-    border: 2px solid white;
-    border-radius: 2px;
-    top:-2px;
     left: -37px;
+    top:-3px;
 }
 
 
-input:checked ~ label::before {
-    content: "";
-    width: 11px;
-    height: 20px;
-    position: absolute;
-    z-index: 20;
-    box-sizing: border-box;
-    border-bottom: 4px solid #ffffff;
-    border-right: 4px solid #ffffff;
-    border-radius: 1px;
-    left: -29px;
-    top:-6px;
-    transform: rotate(45deg);
-    filter: drop-shadow(0px -0px 1px #4b789a);
+input:checked ~ label::after {
+    background-image: url(../img/checkbox-on.svg);
+
 }
 
 input:disabled ~ label::after,
@@ -870,7 +888,8 @@ input:disabled ~ label::before {
 
 .sort-links a {
     color: #cdcdcd;
-    text-decoration: dotted underline #81b3d2;
+    text-decoration-style: dotted;
+    text-decoration-color: #81b3d2;
     font-size: 12px;
     line-height: 18px;
     margin-right: 30px;
@@ -891,8 +910,6 @@ input:disabled ~ label::before {
     text-decoration: none;
 }
 
-
-
 .side-sort-item {
     font-size: 0;
     width: 0;
@@ -907,14 +924,14 @@ input:disabled ~ label::before {
 
 .side-sort-item:last-child {
     transform: rotate(180deg);
-    border-bottom-color: #81b3d2
+    border-bottom-color: #81b3d2;
 }
 
-.side-sort-item:hover {
+.side-sort-item:first-child:hover {
     border-bottom-color: black;
 }
 
-.side-sort-item:active {
+.side-sort-items .side-sort-item:active {
     border-bottom-color: #81b3d2;
 }
 
@@ -934,6 +951,7 @@ input:disabled ~ label::before {
     margin: 0 30px 0 0;
     padding: 0;
     line-height: 0px;
+    background-color: #49995f;
 }
 
 

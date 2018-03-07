@@ -9,10 +9,18 @@ function scriptsRun () {
 
         button.onclick = function () {
             var searchBlock = document.querySelector('.search-form');
-            if (searchBlock.classList.contains('hide')) {
-                searchBlock.classList.remove('hide')
-            } else
-            searchBlock.classList.add('hide')
+            var getFormStyles =  getComputedStyle(searchBlock);
+            var getFormOpacity = getFormStyles.opacity;
+
+            if (getFormOpacity == 0) {
+                setTimeout(function () {searchBlock.style.opacity = "1";}, 450);
+                searchBlock.style.top = "100%";
+            } else {
+                searchBlock.style.opacity = "0";
+                searchBlock.style.transition = "all 0.7s ease-in"
+                setTimeout(function () {searchBlock.style.top = "-65%"}, 250);
+            }
+            return false;
         }
     };
 
