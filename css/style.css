@@ -314,16 +314,19 @@ input {
 }
 
 .map {
-    overflow: hidden;
     position: relative;
     height: 473px;
-    background-image: url("../img/map.jpg");
+    top: -105px;
+    background-color: #cbdda9;
 }
 
-.map img {
+
+.map iframe {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    background-image: url("../img/map.jpg");
+    background-position: center;
 }
 
 .page-footer {
@@ -332,6 +335,8 @@ input {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    opacity: 0.999999;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -607,14 +612,6 @@ input {
     color: #81b3d2;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button,
-input::-moz-outer-spin-button,
-input::-moz-inner-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    margin: 0;
-}
 
 /*End of first page*/
 
