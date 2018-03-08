@@ -79,8 +79,8 @@
                         </p>
                     </div>
                     <label for="price"></label>
-                    <input type="range" class="price-range-input" name="price" id="price" min="0" max="3000" data-values="1 2000" step="100" multiple>
-                    <button class="filter-btn" type="submit">Показать</button>
+                    <input type="range" class="price-range-input" name="price" id="price" min="0" max="3000" data-values="1 2000" step="100">
+                    <button class="filter-btn" type="submit" onclick="event.preventDefault()" href="result.html">Показать</button>
                 </fieldset>
             </form>
         </section>
@@ -212,7 +212,7 @@
         <div class="footer-item">
             <span class="footer-logo-pre">website by</span>
             <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo-after logo-footer">
-                <img src="img/logo-htmlacademy.svg" alt="htmlAcademy" width="115" height="41" alt="htmlAcademy">
+                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlAcademy">
             </a>
         </div>
     </footer>
