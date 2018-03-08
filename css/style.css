@@ -917,7 +917,11 @@ input:disabled ~ label::before {
 .sort-links a {
     color: #cdcdcd;
     text-decoration-style: dotted;
+    -webkit-text-decoration-style: dotted;
     text-decoration-color: #81b3d2;
+    -webkit-text-decoration-color: #81b3d2;
+    -moz-text-decoration-style: dotted;
+    -moz-text-decoration-color: #81b3d2;
     font-size: 12px;
     line-height: 18px;
     margin-right: 30px;
