@@ -69,8 +69,14 @@
                 <fieldset class="daily-price">
                     <legend class="main-title">Стоимость в сутки (P):</legend>
                     <div class="price-range">
-                        <p class="start-price">От 0</p>
-                        <p class="end-price">До 3000</p>
+                        <p class="start-price">
+                            <label for="start-price">От</label>
+                            <input type="text" id="start-price" value="0">
+                        </p>
+                        <p class="end-price">
+                            <label for="end-price">До</label>
+                            <input type="text" id="end-price" value="3000">
+                        </p>
                     </div>
                     <label for="price"></label>
                     <input type="range" class="price-range-input" name="price" id="price" min="0" max="3000" data-values="1 2000" step="100" multiple>
