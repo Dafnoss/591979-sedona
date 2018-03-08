@@ -39,6 +39,7 @@ input {
     font-weight: bold;
     line-height: 26px;
     display: flex;
+    -webkit-flex: 1 1 auto;
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
@@ -131,6 +132,7 @@ input {
 
 .content-row {
     display: flex;
+    -webkit-flex: 1 1 auto;
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
@@ -332,6 +334,7 @@ input {
 .page-footer {
     padding: 30px 6% 30px 6%;
     display: flex;
+    -webkit-flex: 1 1 auto;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -628,6 +631,7 @@ input {
 
 .filters-form {
     display: flex;
+    -webkit-flex: 1 1 auto;
     flex-direction: row;
     justify-content: space-between;
     padding: 25px 6% 25px 6%
@@ -676,6 +680,7 @@ fieldset .main-title {
 
 .price-range {
     display: flex;
+    -webkit-flex: 1 1 auto;
     flex-direction: row;
     justify-content: space-around;
     border: 2px solid white;
@@ -689,6 +694,7 @@ fieldset .main-title {
     width: 100%;
     text-align: center;
     display: flex;
+    -webkit-flex: 1 1 auto;
     justify-content: center;
     padding-left: 5px;
     padding-right: 5px;
@@ -876,12 +882,14 @@ input:disabled ~ label::before {
 
 .sort-menu {
     display: flex;
+    -webkit-flex: 1 1 auto;
     justify-content: space-between;
     align-items: baseline;
 }
 
 .sort-menu-item {
     display: flex;
+    -webkit-flex: 1 1 auto;
     flex-direction: row;
     align-items: baseline;
 }
@@ -889,6 +897,7 @@ input:disabled ~ label::before {
 .sort-links,
 .side-sort-items {
     display: flex;
+    -webkit-flex: 1 1 auto;
     list-style: none;
     padding: 0;
     margin: 0;
