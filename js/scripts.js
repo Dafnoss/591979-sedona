@@ -17,7 +17,7 @@ function scriptsRun () {
                 searchBlock.style.top = "100%";
             } else {
                 searchBlock.style.opacity = "0";
-                searchBlock.style.transition = "all 0.7s ease-in"
+                searchBlock.style.transition = "all 0.7s ease-in";
                 setTimeout(function () {searchBlock.style.top = "-65%"}, 250);
             }
             return false;
