@@ -555,9 +555,6 @@ input {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.input-form .btn:focus{
-    outline: none;
-}
 
 .form-item .input-date {
     position: absolute;
@@ -765,9 +762,6 @@ input[type=range] {
      -webkit-appearance: none;
  }
 
-input[type=range]:focus {
-    outline: none;
-}
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 2px;
@@ -853,11 +847,6 @@ input[type=range]::-ms-thumb {
     color: black;
     background-color: white;
 }
-
-.filter-btn:focus {
-    outline: none;
-}
-
 
 .check-box {
     position: relative;
