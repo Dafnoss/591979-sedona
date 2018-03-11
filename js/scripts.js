@@ -7,8 +7,12 @@ function scriptsRun () {
             return;
         }
 
+        var searchBlock = document.querySelector('.search-form');
+        searchBlock.style.opacity = "0";
+        searchBlock.style.top = "-65%";
+
         button.onclick = function () {
-            var searchBlock = document.querySelector('.search-form');
+            searchBlock = document.querySelector('.search-form');
             var getFormStyles =  getComputedStyle(searchBlock);
             var getFormOpacity = getFormStyles.opacity;
 
