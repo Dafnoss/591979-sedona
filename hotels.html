@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/min.style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
@@ -67,20 +68,19 @@
                         </ul>
                 </fieldset>
                 <fieldset class="daily-price">
-                    <legend class="main-title">Стоимость в сутки (P):</legend>
-                    <div class="price-range">
-                        <p class="start-price">
-                            <label for="start-price">От</label>
-                            <input type="text" id="start-price" value="0">
-                        </p>
-                        <p class="end-price">
-                            <label for="end-price">До</label>
-                            <input type="text" id="end-price" value="3000">
-                        </p>
+                    <legend class="filter-range-title">Стоимость в сутки (р):</legend>
+                    <div class="price-controls">
+                        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                     </div>
-                    <label for="price"></label>
-                    <input type="range" class="price-range-input" name="price" id="price" min="0" max="3000" data-values="1 2600" step="100">
-                    <button class="filter-btn" type="submit">Показать</button>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <button class="btn-transparent" type="submit">Показать</button>
                 </fieldset>
             </form>
         </section>
@@ -217,6 +217,6 @@
         </div>
     </footer>
 </div>
-<script type="text/javascript" src="js/min.scripts.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@ body {
     text-align: center;
     margin: 0;
     background-color: #f2f2f2;
-    letter-spacing: normal ;
+    letter-spacing: normal;
 }
 
 .container {
@@ -20,7 +20,8 @@ body {
 
 }
 
-input {
+.search-form input,
+.filters-form input {
     font-family: "PT Sans", Arial, sans-serif;
 }
 
@@ -40,6 +41,7 @@ input {
     font-weight: bold;
     line-height: 26px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
@@ -76,7 +78,7 @@ input {
     width: 20%;
 }
 
-.menu-item:nth-child(2){
+.menu-item:nth-child(2) {
     margin-right: 11%;
 }
 
@@ -129,7 +131,7 @@ input {
 
 .intro-bottom h2 {
     width: 500px;
-    margin: 0 auto 0 auto ;
+    margin: 0 auto 0 auto;
     text-align: center;
     line-height: 26px;
 }
@@ -139,7 +141,7 @@ input {
     padding: 0;
 }
 
-.content{
+.content {
     z-index: 20;
 }
 
@@ -171,11 +173,10 @@ input {
 }
 
 .content-row:nth-child(2),
-.content-row:nth-child(4){
+.content-row:nth-child(4) {
     align-items: flex-start;
     justify-content: space-between;
 }
-
 
 .content-row:nth-child(2) .content-cell {
     height: auto;
@@ -184,7 +185,6 @@ input {
     position: relative;
 }
 
-
 .content-double-cell {
     width: 67%;
     overflow: hidden;
@@ -192,18 +192,15 @@ input {
     background-color: #c86753;
 }
 
-
-
 .content-row:first-child .main-title,
 .content-row:nth-child(3) .main-title {
     color: white;
     margin: 0 auto 0 auto;
-    width: 150px;
+    width: 170px;
     text-align: center;
     overflow: hidden;
     letter-spacing: revert;
 }
-
 
 .content-cell-number {
     color: white;
@@ -252,10 +249,9 @@ input {
 .content-row:last-child {
     background-color: #eeeeee;
     align-items: center;
-    padding-top: 30px ;
+    padding-top: 30px;
     padding-bottom: 58px;
 }
-
 
 .content-row:last-child .content-cell {
     padding: 0;
@@ -298,17 +294,17 @@ input {
 }
 
 .search-main .btn {
-     display: table;
-     background-color: #766357;
-     color: white;
-     font-weight: bold;
-     line-height: 26px;
-     width: 568px;
-     height: 86px;
-     margin: 47px auto 0 auto;
+    display: table;
+    background-color: #766357;
+    color: white;
+    font-weight: bold;
+    line-height: 26px;
+    width: 568px;
+    height: 86px;
+    margin: 47px auto 0 auto;
     cursor: pointer;
     text-decoration: none;
- }
+}
 
 .search-main .btn:hover {
     background-color: #604e43;
@@ -316,7 +312,7 @@ input {
 
 .search-main .btn:active {
     background-color: #503e33;
-    color: rgba(255, 255, 255, 0.3) ;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .search-main .btn-item {
@@ -332,13 +328,13 @@ input {
     background-color: #cbdda9;
 }
 
-
 .map iframe {
     width: 100%;
     height: 147%;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    background-color: lightgreen;
     background-image: url("../img/map.jpg");
     background-position: center;
 }
@@ -357,9 +353,8 @@ input {
     width: 24%;
 }
 
-
 .footer-item:first-child {
-    padding-top:0;
+    padding-top: 0;
 
 }
 
@@ -378,6 +373,7 @@ input {
 
 .social {
     display: inline-block;
+    vertical-align: baseline;
     font-size: 0;
     width: 46px;
     background-color: #81b3d2;
@@ -385,8 +381,6 @@ input {
     margin-bottom: 6px;
     margin-right: 2px;
 }
-
-
 
 .social a {
     display: block;
@@ -441,7 +435,7 @@ input {
     filter: brightness(0) saturate(100%) invert(76%) sepia(26%) saturate(510%) hue-rotate(162deg) brightness(86%) contrast(89%);
 }
 
-.footer-logo-after img:active{
+.footer-logo-after img:active {
     filter: invert(.5);
     opacity: 0.5;
 }
@@ -490,11 +484,11 @@ input {
     padding: 0 30px 0 10px;
 }
 
-.form-item input:hover{
+.form-item input:hover {
     background-color: #ebebeb;
 }
 
-.form-item input:focus{
+.form-item input:focus {
     outline: 2px solid #e5e5e5;
     background-color: white;
 }
@@ -529,8 +523,6 @@ input {
     padding: 0;
 }
 
-
-
 .form-item:nth-child(3) label[for="children"] {
     padding-left: 40px;
     float: right;
@@ -559,7 +551,6 @@ input {
     color: rgba(255, 255, 255, 0.3);
 }
 
-
 .form-item .input-date {
     position: absolute;
     width: 22px;
@@ -582,7 +573,6 @@ input {
     filter: brightness(0) saturate(100%) invert(76%) sepia(26%) saturate(510%) hue-rotate(162deg) brightness(86%) contrast(89%);
 }
 
-
 .form-item:last-of-type span {
     position: absolute;
     color: #a9a9a9;
@@ -597,7 +587,7 @@ input {
     top: 0;
     width: 38px;
     height: 30px;
-    padding-top:8px;
+    padding-top: 8px;
     background-color: #f2f2f2;
 
 }
@@ -628,7 +618,6 @@ input {
     color: #81b3d2;
 }
 
-
 /*End of first page*/
 
 .filters {
@@ -640,13 +629,13 @@ input {
     background-color: #44749c;
 }
 
-
 .filters-form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 28px 6% 30px 6%;
-    background: url("../img/hotels-background.jpg") no-repeat center;
+    background: url("../img/hotels-background.jpg") no-repeat;
+    background-size: cover;
     background-color: #44749c;
 
 }
@@ -657,11 +646,10 @@ fieldset ul {
     margin: 0;
 }
 
-.prop-type-items{
+.prop-type-items {
     padding-left: 46px;
 
 }
-
 
 fieldset li {
     margin-top: 25px;
@@ -700,167 +688,126 @@ fieldset .main-title {
     box-sizing: border-box;
 }
 
-.price-range {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border: 2px solid white;
-    border-radius: 2px;
+.filter-range {
+    width: 330px;
+    margin: 50px auto;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.filter-range-title {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.price-controls {
     position: relative;
-    margin: 9px 0 9px 0;
-}
-
-.price-range p {
-    margin: 5px 0 5px 0;
-    width: 100%;
-    text-align: center;
     display: flex;
-    justify-content: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    align-items: baseline;
+    justify-content: space-around;
+    height: 32px;
+    min-width: 233px;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
 }
 
-.price-range label {
-     flex-grow: 1;
-     text-align: right;
- }
-
-.price-range:first-of-type label {
-    margin-right: 2px;
-}
-
-
-.price-range input {
-    font: inherit;
-    width: 1em;
-    box-sizing: border-box;
-    border: 0;
-    color: #FFFFFF;
-    background-color: transparent;
-    text-align: left;
-    flex-grow: 1;
-}
-
-.end-price input {
-    margin-right: 10px ;
-}
-
-
-.price-range::after {
+.price-controls::after {
     content: "";
     position: absolute;
-    width: 0;
-    height: 20px;
-    border-left: 2px solid #ffffff;
-    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
 }
 
-input[type = "range"] {
-    display: block;
-    box-sizing: border-box;
-    width: 99%;
-    pointer-events: none;
-    height: 2px;
-    padding-right: 5px ;
-    margin-top: 20px;
-}
-
-input[type="range"]:nth-of-type(2) {
-    margin-top: -4px;
-}
-
-input[type=range] {
-     -webkit-appearance: none;
- }
-
-input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 2px;
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    vertical-align: top;
     cursor: pointer;
-    transition: all 0.3s linear;
 }
 
-input[type=range]::-webkit-slider-thumb {
-    box-shadow: 0 0 3px #262522;
-    border: 8px solid #FFFFFF;
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
-    background: #ababab;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -9px;
-    pointer-events: all;
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 18%;
 }
 
-
-input[type=range]::-moz-range-track {
-    width: 100%;
-    height: 2px;
-    cursor: pointer;
-    box-shadow: 0 0 1px #000000;
-    background: #FFFFFF;
-    border-radius: 0;
-    border: 0 solid #010101;
-}
-input[type=range]::-moz-range-thumb {
-    box-shadow: 0 0 3px #262522;
-    border: 8px solid #FFFFFF;
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
-    background: #ababab;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -9px;
-    pointer-events: all;
-}
-input[type=range]::-ms-track {
-    width: 100%;
-    height: 2px;
-    cursor: pointer;
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
-}
-
-input[type=range]::-ms-thumb {
-    box-shadow: 0 0 3px #262522;
-    border: 8px solid #FFFFFF;
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
-    background: #ababab;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -9px;
-    pointer-events: all;
-}
-
-
-.filter-btn {
-    display: block;
-    width: 137px;
-    height: 36px;
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
     font: inherit;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 2px;
-    margin-top: 31px;
-    margin-left: 26%;
-    margin-right: auto;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-    box-sizing: padding-box;
+    background: none;
+    border: none;
 }
 
-.filter-btn:hover {
-    color: black;
-    background-color: white;
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -8px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    border-width: 9px;
+    top: -10px;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-transparent:hover {
+    color: #000000;
+
+    background: #ffffff;
 }
 
 .check-box {
@@ -877,9 +824,8 @@ input[type=range]::-ms-thumb {
     background-image: url(../img/checkbox-off.svg);
     box-sizing: border-box;
     left: -41px;
-    top:-2px;
+    top: -2px;
 }
-
 
 input:checked ~ label::after {
     background-image: url(../img/checkbox-on.svg);
@@ -904,12 +850,24 @@ input:disabled ~ label::before {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-shrink: 0;
 }
 
-.sort-menu-item {
+.sort-menu-item:first-child {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: baseline;
+}
+
+.sort-links {
+    flex-wrap: wrap;
+    max-width: 60%;
+}
+
+.sort-links li {
+    display: block;
+
 }
 
 .sort-links,
@@ -922,6 +880,7 @@ input:disabled ~ label::before {
 }
 
 .sort-menu-item h2 {
+    display: block;
     margin: 30px 45px 30px 0;
     font-size: 21px;
     line-height: 26px;
@@ -929,6 +888,7 @@ input:disabled ~ label::before {
 }
 
 .sort-menu-item span {
+    display: block;
     margin-right: 43px;
     font-size: 12px;
     line-height: 18px;
@@ -954,7 +914,7 @@ input:disabled ~ label::before {
 }
 
 .sort-links a:hover {
-    color:#81b3d2
+    color: #81b3d2
 }
 
 .sort-links a:active {
@@ -1010,6 +970,7 @@ input:disabled ~ label::before {
 .prop-image {
     margin: 0 30px 0 0;
     padding: 0;
+    flex-shrink: 0;
     line-height: 0;
     background-color: #49995f;
     max-width: 100%;
@@ -1020,7 +981,6 @@ input:disabled ~ label::before {
     max-width: 100%;
     height: auto;
 }
-
 
 .prop-description {
     margin-right: auto;
@@ -1112,7 +1072,6 @@ input:disabled ~ label::before {
     margin-top: -1px;
     letter-spacing: 4px;
 }
-
 
 .rating-text {
     background-color: #f2f2f2;
