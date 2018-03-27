@@ -46,7 +46,6 @@ body {
     justify-content: space-between;
     margin: 0;
     align-items: center;
-    height: 56px;
     padding: 0 6% 0 6%;
     box-sizing: border-box;
 }
@@ -76,19 +75,21 @@ body {
 
 .menu-item {
     width: 20%;
+    padding-top: 15px;
+    padding-bottom: 15px
 }
 
-.menu-item:nth-child(2) {
+.menu-item:nth-child(4n-2) {
     margin-right: 11%;
 }
 
-.menu-item:first-child,
-.menu-item:nth-child(2) {
+.menu-item:nth-child(4n-3),
+.menu-item:nth-child(4n-2) {
     text-align: left;
 }
 
-.menu-item:last-child,
-.menu-item:nth-child(3) {
+.menu-item:nth-child(4n),
+.menu-item:nth-child(4n-1) {
     text-align: right;
 }
 
